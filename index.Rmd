@@ -87,7 +87,7 @@ Los datos que se van a utilizar durante el trabajo han sido sacados de **Kaggle*
 
 El trabajo se ha escrito sobre **4 dataframes**. 
 
-El primero llamado **'aa'** tiene 9 columnas y 25.001.801 observaciones. 
+El primero llamado **'aa'** tiene 9 columnas y 9.554 observaciones. 
 
 El segundo **'bb'** tiene 5 columnas y 200 observaciones. 
 
@@ -114,6 +114,10 @@ cc <- rio::import(datos3)
 datos4 <- here::here("datos", "regional_mundial.csv")
 
 dd <- rio::import(datos4)
+
+#aa <- aa %>% filter(title == "All I Want for Christmas Is You")
+  
+#rio::export(aa, "./datos/charts.csv")
 ```
 
 <hr class="linea-red">
@@ -470,7 +474,7 @@ aa_mundo_plot <- plot_ly(aa_mundo,
 
 ggplotly(aa_mundo_plot)
 ```
-# 8. 3. <FONT>Los 5 Países con ... espíritu navideño.</FONT>. {.tabset}
+# 8. 3. <FONT>Los 5 Países con ... espíritu navideño</FONT>. {.tabset}
 
 ## <FONT COLOR="FF4D00">MAYOR</FONT>
 
